@@ -1,0 +1,610 @@
+@charset "UTF-8";
+@import "variables.scss";
+
+body {
+  font-family: "Roboto-Regular";
+
+  h1,
+  h2,
+  h4,
+  h5 {
+    font-family: "Roboto-Black-Italic";
+    color: $Yellow_Munsel;
+  }
+
+  header {
+    background-color: $Alabama_Crimson;
+
+    .navbar-brand,
+    .navbar-brand:hover,
+    .nav-link,
+    .nav-link:hover {
+      color: $Yellow_Munsel;
+    }
+
+    .navbar-toggler {
+      color: $Yellow_Munsel;
+      span {
+        color: $Yellow_Munsel;
+      }
+    }
+
+    hr {
+      color: $Yellow_Munsel;
+    }
+
+    .collapse {
+      a:hover {
+        background-color: $Blood_Organ;
+      }
+
+      .border-bottom {
+        color: $Yellow_Munsel;
+      }
+    }
+  }
+
+  main {
+    min-height: 100vh;
+  }
+
+  a {
+    color: $Yellow_Munsel;
+  }
+
+  a:hover {
+    color: $Yellow_Munsel;
+  }
+
+  .btn {
+    color: $Yellow_Munsel;
+  }
+  .btn:hover {
+    color: $Yellow_Munsel;
+  }
+
+  .filtroCatalogo {
+    background-color: $Blood_Organ;
+    option {
+      color: $Blood_Organ;
+    }
+  }
+
+  #presentacion {
+    background-image: url("../img/placeholder2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding-left: -1em;
+    padding-right: -1em;
+
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    min-height: 50vh;
+
+    h1 {
+      font-size: 15em;
+    }
+
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 4em;
+      }
+    }
+  }
+  #home {
+    background-image: url("../img/Wave.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+      -webkit-text-stroke: 1px black;
+    }
+
+    .card {
+      h2,
+      h5 {
+        color: $Blood_Organ;
+      }
+    }
+  }
+
+  #catalogo,
+  #gestionInmueble,
+  #modificarGaleria {
+    background-image: url("../img/Abstract Paper.svg");
+
+    .not-found {
+      padding-top: 25em;
+      padding-bottom: 25em;
+
+      color: $Yellow_Munsel;
+    }
+    .col-6 {
+      display: flex;
+      justify-content: center;
+    }
+    .card {
+      color: $Blood_Organ;
+      width: 30em;
+      margin-left: auto;
+      margin-right: auto;
+
+      img {
+        height: 20em;
+      }
+
+      a {
+        color: $Blood_Organ;
+      }
+
+      @media only screen and (max-width: 600px) {
+        img {
+          height: 15em;
+        }
+        width: 20em;
+      }
+    }
+
+    .page-item,
+    .page-link {
+      color: $Blood_Organ;
+    }
+
+    li.active a {
+      color: $Yellow_Munsel;
+      background-color: $Blood_Organ;
+      border-color: $Blood_Organ;
+    }
+
+    .anuncio {
+      width: fit-content;
+      margin: 0 auto;
+
+      a {
+        font-size: x-large;
+      }
+    }
+
+    .carousel-inner {
+      width: 100%;
+      height: 500px;
+
+      @media only screen and (max-width: 600px) {
+        height: 20em;
+      }
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+
+        @media only screen and (max-width: 600px) {
+          width: 20em;
+          height: 20em;
+        }
+      }
+    }
+
+    #galeriaFondo {
+      background-color: $Chocolate_Brown;
+      border: solid;
+      border-color: $Yellow_Munsel;
+      border-radius: 2em;
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 2em;
+      width: 50%;
+
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+      }
+    }
+    .carousel {
+      .carousel-caption {
+        h2 a {
+          background-color: $Chocolate_Brown;
+          border: solid;
+          border-color: $Yellow_Munsel;
+          border-radius: 0.5em;
+          padding: 0.2em;
+          color: $Yellow_Munsel;
+        }
+      }
+    }
+
+    #nuevaImagen {
+      margin-top: 2em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  #infoInmueble {
+    background-image: url("../img/Abstract Paper.svg");
+    color: $Yellow_Munsel;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    h2,
+    h5 {
+      width: 22em;
+
+      @media only screen and (max-width: 600px) {
+        width: 10em;
+      }
+    }
+    #fondoInmueble {
+      background-color: $Chocolate_Brown;
+      width: fit-content;
+      padding: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 2em;
+      border-style: groove;
+      border-color: $Yellow_Munsel;
+
+      @media only screen and (max-width: 600px) {
+        width: 90%;
+      }
+    }
+
+    #galeria {
+      margin-top: 2em;
+    }
+
+    .carousel-inner {
+      border: solid;
+      border-radius: 2em;
+      width: 30em;
+      height: 500px;
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 30em;
+        height: 500px;
+      }
+      @media only screen and (max-width: 600px) {
+        height: 200px;
+        width: fit-content;
+
+        border-radius: 0.5em;
+
+        img {
+          height: 200px;
+          width: fit-content;
+        }
+      }
+    }
+
+    iframe {
+      @media only screen and (max-width: 600px) {
+        height: 200px;
+        width: 20;
+      }
+    }
+  }
+
+  #anunciarInmueble,
+  #modificarInmueble {
+    background-image: url("../img/Abstract Paper.svg");
+    background-size: cover;
+
+    color: $Yellow_Munsel;
+
+    form {
+      background-color: $Chocolate_Brown;
+      border-radius: 2em;
+      border-style: solid;
+      border-color: $Yellow_Munsel;
+      padding: 2em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+
+      div {
+        padding-bottom: 2em;
+      }
+      label {
+        color: $Chocolate_Brown;
+      }
+
+      input,
+      select,
+      textarea {
+        color: $Chocolate_Brown;
+        width: 20em;
+      }
+
+      input[type="submit"] {
+        text-align: center;
+        width: fit-content;
+      }
+
+      @media only screen and (max-width: 600px) {
+        padding: 1.3em;
+      }
+    }
+  }
+
+  #eliminarInmueble {
+    background-image: url("../img/Abstract Paper.svg");
+    background-size: cover;
+
+    color: $Yellow_Munsel;
+
+    form {
+      background-color: $Chocolate_Brown;
+      border-radius: 2em;
+      border-style: solid;
+      border-color: $Yellow_Munsel;
+      width: fit-content;
+      padding: 2em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+
+      label {
+        margin-bottom: 1em;
+        color: $Yellow_Munsel;
+      }
+
+      input {
+        color: $Chocolate_Brown;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      input[type="submit"] {
+        color: $Yellow_Munsel;
+        margin-top: 1em;
+        text-align: center;
+        width: fit-content;
+      }
+
+      @media only screen and (max-width: 600px) {
+        padding: 1.3em;
+      }
+    }
+  }
+
+  #cancelarCita {
+    background-image: url("../img/Cloudy.svg");
+    background-size: cover;
+
+    color: $Yellow_Munsel;
+
+    form {
+      background-color: $Chocolate_Brown;
+      border-radius: 2em;
+      border-style: solid;
+      border-color: $Yellow_Munsel;
+      width: fit-content;
+      padding: 2em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+
+      label {
+        margin-bottom: 1em;
+        color: $Yellow_Munsel;
+      }
+
+      input {
+        color: $Chocolate_Brown;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      input[type="submit"] {
+        color: $Yellow_Munsel;
+        margin-top: 1em;
+        text-align: center;
+        width: fit-content;
+      }
+
+      @media only screen and (max-width: 600px) {
+        padding: 1.3em;
+      }
+    }
+  }
+
+  #contacto,
+  #contactarCita {
+    background-image: url("../img/Cloudy.svg");
+    background-size: cover;
+
+    color: $Yellow_Munsel;
+
+    form {
+      background-color: $Chocolate_Brown;
+      border-radius: 2em;
+      border-style: solid;
+      border-color: $Yellow_Munsel;
+      width: fit-content;
+      padding: 2em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+
+      h5 {
+        margin-bottom: -2em;
+      }
+
+      label {
+        color: $Chocolate_Brown;
+      }
+
+      textarea {
+        height: 15em;
+      }
+
+      div {
+        margin-top: 2em;
+      }
+    }
+  }
+
+  #citas,
+  #modificarCita {
+    background-image: url("../img/Cloudy.svg");
+    background-size: cover;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    .card {
+      color: $Blood_Organ;
+      width: 22em;
+    }
+
+    .card-footer a {
+      color: $Blood_Organ;
+    }
+
+    form {
+      background-color: $Chocolate_Brown;
+      border-radius: 2em;
+      border-style: solid;
+      border-color: $Yellow_Munsel;
+      padding: 2em;
+
+      width: fit-content;
+
+      label {
+        color: $Yellow_Munsel;
+      }
+    }
+  }
+
+  #login {
+    background-image: url("../img/Linear Gradient.svg");
+    background-size: cover;
+
+    .card {
+      border-color: $Blood_Organ;
+      margin-top: 20vh;
+      height: fit-content;
+
+      @media only screen and (max-width: 600px) {
+        width: 80%;
+      }
+    }
+
+    .card-body {
+      background-color: $Chocolate_Brown;
+      width: 20em;
+
+      .btn:hover {
+        color: $Yellow_Munsel;
+      }
+
+      @media only screen and (max-width: 600px) {
+        width: auto;
+      }
+    }
+
+    .card-header,
+    .card-footer {
+      color: $Yellow_Munsel;
+      background-color: $Alabama_Crimson;
+    }
+  }
+
+  #registro,
+  #modificarPerfil {
+    background-image: url("../img/Linear Gradient.svg");
+    background-size: cover;
+
+    form {
+      background-color: $Chocolate_Brown;
+      border-radius: 2em;
+      border-style: solid;
+      border-color: $Yellow_Munsel;
+      padding: 2em;
+      margin-top: 2em;
+      margin-bottom: 2em;
+
+      div {
+        padding-bottom: 2em;
+      }
+
+      input {
+        color: $Chocolate_Brown;
+        width: 20em;
+      }
+      input[type="submit"] {
+        text-align: center;
+        width: fit-content;
+      }
+
+      @media only screen and (max-width: 600px) {
+        padding: 1.3em;
+      }
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .primerInicio {
+    background-image: url("../img/Linear Gradient.svg");
+    background-size: cover;
+    color: $Yellow_Munsel;
+    form {
+      background-color: $Chocolate_Brown;
+      border-radius: 2em;
+      border-style: solid;
+      border-color: $Yellow_Munsel;
+      padding: 2em;
+      margin-top: 20vh;
+
+      input[type="text"],
+      label {
+        color: $Chocolate_Brown;
+      }
+    }
+  }
+
+  #perfil {
+    background-image: url("../img/Linear Gradient.svg");
+    background-size: cover;
+
+    color: $Blood_Organ;
+
+    a {
+      color: $Blood_Organ;
+    }
+
+    .card {
+      width: fit-content;
+    }
+  }
+
+  footer {
+    background-color: $Alabama_Crimson;
+    span {
+      color: $Yellow_Munsel;
+    }
+    i {
+      color: $Yellow_Munsel;
+    }
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

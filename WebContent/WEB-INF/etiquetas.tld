@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, 
+ Inc.//DTD JSP Tag Library 1.1//EN" 
+ "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+ 
+ <taglib> 
+ 	<tlibversion>2.0</tlibversion> 
+    <jspversion>2.3</jspversion>
+    <shortname>etiquetas</shortname>
+
+    <tag> 
+        <name>CatalogoInm</name> 
+        <tagclass>tags.CatalogoInm</tagclass>
+        <bodycontent>empty</bodycontent>
+        
+        <attribute> 
+            <name>codigo</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+		<attribute> 
+            <name>precio</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>metroCuadrado</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>numHabitacion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>poblacion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute> 
+        
+        <attribute> 
+            <name>provincia</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute> 
+        
+        <attribute> 
+            <name>direccion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>                                      
+        
+        <attribute> 
+            <name>tNombre</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>stNombre</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>iNombre</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    
+    <tag> 
+        <name>GestionInm</name> 
+        <tagclass>tags.GestionInm</tagclass>
+        <bodycontent>empty</bodycontent>
+        
+        <attribute> 
+            <name>codigo</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>descripcion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+		<attribute> 
+            <name>precio</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>metroCuadrado</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>numHabitacion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>provincia</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>poblacion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+       
+       <attribute> 
+            <name>codigoPostal</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>direccion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>coordenada</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>tNombre</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>stNombre</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>iNombre</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    
+    <tag> 
+        <name>InfoInm</name> 
+        <tagclass>tags.InfoInm</tagclass>
+        <bodycontent>empty</bodycontent>
+        
+        <attribute> 
+            <name>codigo</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>descripcion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+		<attribute> 
+            <name>precio</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>metroCuadrado</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>numHabitacion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>provincia</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>poblacion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+       
+       <attribute> 
+            <name>codigoPostal</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>direccion</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>coordenada</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>tNombre</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        
+        <attribute> 
+            <name>stNombre</name>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

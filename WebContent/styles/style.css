@@ -1,0 +1,638 @@
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../Roboto/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "Roboto-Black-Italic";
+  src: url("../Roboto/Roboto-BlackItalic.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold-Italic";
+  src: url("../Roboto/Roboto-BoldItalic.ttf");
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("../Roboto/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light-Italic";
+  src: url("../Roboto/Roboto-LightItalic.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light-Medium";
+  src: url("../Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light-Medium-Italic";
+  src: url("../Roboto/Roboto-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../Roboto/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "Roboto-Thin-Italic";
+  src: url("../Roboto/Roboto-ThinItalic.ttf");
+}
+body {
+  font-family: "Roboto-Regular";
+}
+body h1,
+body h2,
+body h4,
+body h5 {
+  font-family: "Roboto-Black-Italic";
+  color: #e3c800;
+}
+body header {
+  background-color: #a20025;
+}
+body header .navbar-brand,
+body header .navbar-brand:hover,
+body header .nav-link,
+body header .nav-link:hover {
+  color: #e3c800;
+}
+body header .navbar-toggler {
+  color: #e3c800;
+}
+body header .navbar-toggler span {
+  color: #e3c800;
+}
+body header hr {
+  color: #e3c800;
+}
+body header .collapse a:hover {
+  background-color: #67071d;
+}
+body header .collapse .border-bottom {
+  color: #e3c800;
+}
+body main {
+  min-height: 100vh;
+}
+body a {
+  color: #e3c800;
+}
+body a:hover {
+  color: #e3c800;
+}
+body .btn {
+  color: #e3c800;
+}
+body .btn:hover {
+  color: #e3c800;
+}
+body .filtroCatalogo {
+  background-color: #67071d;
+}
+body .filtroCatalogo option {
+  color: #67071d;
+}
+body #presentacion {
+  background-image: url("../img/placeholder2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: -1em;
+  padding-right: -1em;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+  min-height: 50vh;
+}
+body #presentacion h1 {
+  font-size: 15em;
+}
+@media only screen and (max-width: 600px) {
+  body #presentacion h1 {
+    font-size: 4em;
+  }
+}
+body #home {
+  background-image: url("../img/Wave.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #home h1 {
+  -webkit-text-stroke: 1px black;
+}
+body #home .card h2,
+body #home .card h5 {
+  color: #67071d;
+}
+body #catalogo,
+body #gestionInmueble,
+body #modificarGaleria {
+  background-image: url("../img/Abstract Paper.svg");
+}
+body #catalogo .not-found,
+body #gestionInmueble .not-found,
+body #modificarGaleria .not-found {
+  padding-top: 25em;
+  padding-bottom: 25em;
+  color: #e3c800;
+}
+body #catalogo .col-6,
+body #gestionInmueble .col-6,
+body #modificarGaleria .col-6 {
+  display: flex;
+  justify-content: center;
+}
+body #catalogo .card,
+body #gestionInmueble .card,
+body #modificarGaleria .card {
+  color: #67071d;
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #catalogo .card img,
+body #gestionInmueble .card img,
+body #modificarGaleria .card img {
+  height: 20em;
+}
+body #catalogo .card a,
+body #gestionInmueble .card a,
+body #modificarGaleria .card a {
+  color: #67071d;
+}
+@media only screen and (max-width: 600px) {
+  body #catalogo .card,
+body #gestionInmueble .card,
+body #modificarGaleria .card {
+    width: 20em;
+  }
+  body #catalogo .card img,
+body #gestionInmueble .card img,
+body #modificarGaleria .card img {
+    height: 15em;
+  }
+}
+body #catalogo .page-item,
+body #catalogo .page-link,
+body #gestionInmueble .page-item,
+body #gestionInmueble .page-link,
+body #modificarGaleria .page-item,
+body #modificarGaleria .page-link {
+  color: #67071d;
+}
+body #catalogo li.active a,
+body #gestionInmueble li.active a,
+body #modificarGaleria li.active a {
+  color: #e3c800;
+  background-color: #67071d;
+  border-color: #67071d;
+}
+body #catalogo .anuncio,
+body #gestionInmueble .anuncio,
+body #modificarGaleria .anuncio {
+  width: fit-content;
+  margin: 0 auto;
+}
+body #catalogo .anuncio a,
+body #gestionInmueble .anuncio a,
+body #modificarGaleria .anuncio a {
+  font-size: x-large;
+}
+body #catalogo .carousel-inner,
+body #gestionInmueble .carousel-inner,
+body #modificarGaleria .carousel-inner {
+  width: 100%;
+  height: 500px;
+}
+@media only screen and (max-width: 600px) {
+  body #catalogo .carousel-inner,
+body #gestionInmueble .carousel-inner,
+body #modificarGaleria .carousel-inner {
+    height: 20em;
+  }
+}
+body #catalogo .carousel-inner img,
+body #gestionInmueble .carousel-inner img,
+body #modificarGaleria .carousel-inner img {
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
+@media only screen and (max-width: 600px) {
+  body #catalogo .carousel-inner img,
+body #gestionInmueble .carousel-inner img,
+body #modificarGaleria .carousel-inner img {
+    width: 20em;
+    height: 20em;
+  }
+}
+body #catalogo #galeriaFondo,
+body #gestionInmueble #galeriaFondo,
+body #modificarGaleria #galeriaFondo {
+  background-color: #390410;
+  border: solid;
+  border-color: #e3c800;
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+  width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  body #catalogo #galeriaFondo,
+body #gestionInmueble #galeriaFondo,
+body #modificarGaleria #galeriaFondo {
+    width: 90%;
+  }
+}
+body #catalogo .carousel .carousel-caption h2 a,
+body #gestionInmueble .carousel .carousel-caption h2 a,
+body #modificarGaleria .carousel .carousel-caption h2 a {
+  background-color: #390410;
+  border: solid;
+  border-color: #e3c800;
+  border-radius: 0.5em;
+  padding: 0.2em;
+  color: #e3c800;
+}
+body #catalogo #nuevaImagen,
+body #gestionInmueble #nuevaImagen,
+body #modificarGaleria #nuevaImagen {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #infoInmueble {
+  background-image: url("../img/Abstract Paper.svg");
+  color: #e3c800;
+  font-size: x-large;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+body #infoInmueble h2,
+body #infoInmueble h5 {
+  width: 22em;
+}
+@media only screen and (max-width: 600px) {
+  body #infoInmueble h2,
+body #infoInmueble h5 {
+    width: 10em;
+  }
+}
+body #infoInmueble #fondoInmueble {
+  background-color: #390410;
+  width: fit-content;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2em;
+  border-style: groove;
+  border-color: #e3c800;
+}
+@media only screen and (max-width: 600px) {
+  body #infoInmueble #fondoInmueble {
+    width: 90%;
+  }
+}
+body #infoInmueble #galeria {
+  margin-top: 2em;
+}
+body #infoInmueble .carousel-inner {
+  border: solid;
+  border-radius: 2em;
+  width: 30em;
+  height: 500px;
+}
+body #infoInmueble .carousel-inner img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
+  height: 500px;
+}
+@media only screen and (max-width: 600px) {
+  body #infoInmueble .carousel-inner {
+    height: 200px;
+    width: fit-content;
+    border-radius: 0.5em;
+  }
+  body #infoInmueble .carousel-inner img {
+    height: 200px;
+    width: fit-content;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body #infoInmueble iframe {
+    height: 200px;
+    width: 20;
+  }
+}
+body #anunciarInmueble,
+body #modificarInmueble {
+  background-image: url("../img/Abstract Paper.svg");
+  background-size: cover;
+  color: #e3c800;
+}
+body #anunciarInmueble form,
+body #modificarInmueble form {
+  background-color: #390410;
+  border-radius: 2em;
+  border-style: solid;
+  border-color: #e3c800;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+body #anunciarInmueble form div,
+body #modificarInmueble form div {
+  padding-bottom: 2em;
+}
+body #anunciarInmueble form label,
+body #modificarInmueble form label {
+  color: #390410;
+}
+body #anunciarInmueble form input,
+body #anunciarInmueble form select,
+body #anunciarInmueble form textarea,
+body #modificarInmueble form input,
+body #modificarInmueble form select,
+body #modificarInmueble form textarea {
+  color: #390410;
+  width: 20em;
+}
+body #anunciarInmueble form input[type=submit],
+body #modificarInmueble form input[type=submit] {
+  text-align: center;
+  width: fit-content;
+}
+@media only screen and (max-width: 600px) {
+  body #anunciarInmueble form,
+body #modificarInmueble form {
+    padding: 1.3em;
+  }
+}
+body #eliminarInmueble {
+  background-image: url("../img/Abstract Paper.svg");
+  background-size: cover;
+  color: #e3c800;
+}
+body #eliminarInmueble form {
+  background-color: #390410;
+  border-radius: 2em;
+  border-style: solid;
+  border-color: #e3c800;
+  width: fit-content;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+body #eliminarInmueble form label {
+  margin-bottom: 1em;
+  color: #e3c800;
+}
+body #eliminarInmueble form input {
+  color: #390410;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #eliminarInmueble form input[type=submit] {
+  color: #e3c800;
+  margin-top: 1em;
+  text-align: center;
+  width: fit-content;
+}
+@media only screen and (max-width: 600px) {
+  body #eliminarInmueble form {
+    padding: 1.3em;
+  }
+}
+body #cancelarCita {
+  background-image: url("../img/Cloudy.svg");
+  background-size: cover;
+  color: #e3c800;
+}
+body #cancelarCita form {
+  background-color: #390410;
+  border-radius: 2em;
+  border-style: solid;
+  border-color: #e3c800;
+  width: fit-content;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+body #cancelarCita form label {
+  margin-bottom: 1em;
+  color: #e3c800;
+}
+body #cancelarCita form input {
+  color: #390410;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #cancelarCita form input[type=submit] {
+  color: #e3c800;
+  margin-top: 1em;
+  text-align: center;
+  width: fit-content;
+}
+@media only screen and (max-width: 600px) {
+  body #cancelarCita form {
+    padding: 1.3em;
+  }
+}
+body #contacto,
+body #contactarCita {
+  background-image: url("../img/Cloudy.svg");
+  background-size: cover;
+  color: #e3c800;
+}
+body #contacto form,
+body #contactarCita form {
+  background-color: #390410;
+  border-radius: 2em;
+  border-style: solid;
+  border-color: #e3c800;
+  width: fit-content;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+body #contacto form h5,
+body #contactarCita form h5 {
+  margin-bottom: -2em;
+}
+body #contacto form label,
+body #contactarCita form label {
+  color: #390410;
+}
+body #contacto form textarea,
+body #contactarCita form textarea {
+  height: 15em;
+}
+body #contacto form div,
+body #contactarCita form div {
+  margin-top: 2em;
+}
+body #citas,
+body #modificarCita {
+  background-image: url("../img/Cloudy.svg");
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #citas .card,
+body #modificarCita .card {
+  color: #67071d;
+  width: 22em;
+}
+body #citas .card-footer a,
+body #modificarCita .card-footer a {
+  color: #67071d;
+}
+body #citas form,
+body #modificarCita form {
+  background-color: #390410;
+  border-radius: 2em;
+  border-style: solid;
+  border-color: #e3c800;
+  padding: 2em;
+  width: fit-content;
+}
+body #citas form label,
+body #modificarCita form label {
+  color: #e3c800;
+}
+body #login {
+  background-image: url("../img/Linear Gradient.svg");
+  background-size: cover;
+}
+body #login .card {
+  border-color: #67071d;
+  margin-top: 20vh;
+  height: fit-content;
+}
+@media only screen and (max-width: 600px) {
+  body #login .card {
+    width: 80%;
+  }
+}
+body #login .card-body {
+  background-color: #390410;
+  width: 20em;
+}
+body #login .card-body .btn:hover {
+  color: #e3c800;
+}
+@media only screen and (max-width: 600px) {
+  body #login .card-body {
+    width: auto;
+  }
+}
+body #login .card-header,
+body #login .card-footer {
+  color: #e3c800;
+  background-color: #a20025;
+}
+body #registro,
+body #modificarPerfil {
+  background-image: url("../img/Linear Gradient.svg");
+  background-size: cover;
+}
+body #registro form,
+body #modificarPerfil form {
+  background-color: #390410;
+  border-radius: 2em;
+  border-style: solid;
+  border-color: #e3c800;
+  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+body #registro form div,
+body #modificarPerfil form div {
+  padding-bottom: 2em;
+}
+body #registro form input,
+body #modificarPerfil form input {
+  color: #390410;
+  width: 20em;
+}
+body #registro form input[type=submit],
+body #modificarPerfil form input[type=submit] {
+  text-align: center;
+  width: fit-content;
+}
+@media only screen and (max-width: 600px) {
+  body #registro form,
+body #modificarPerfil form {
+    padding: 1.3em;
+  }
+}
+body #registro a,
+body #modificarPerfil a {
+  display: flex;
+  justify-content: center;
+}
+body .primerInicio {
+  background-image: url("../img/Linear Gradient.svg");
+  background-size: cover;
+  color: #e3c800;
+}
+body .primerInicio form {
+  background-color: #390410;
+  border-radius: 2em;
+  border-style: solid;
+  border-color: #e3c800;
+  padding: 2em;
+  margin-top: 20vh;
+}
+body .primerInicio form input[type=text],
+body .primerInicio form label {
+  color: #390410;
+}
+body #perfil {
+  background-image: url("../img/Linear Gradient.svg");
+  background-size: cover;
+  color: #67071d;
+}
+body #perfil a {
+  color: #67071d;
+}
+body #perfil .card {
+  width: fit-content;
+}
+body footer {
+  background-color: #a20025;
+}
+body footer span {
+  color: #e3c800;
+}
+body footer i {
+  color: #e3c800;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*# sourceMappingURL=style.css.map */

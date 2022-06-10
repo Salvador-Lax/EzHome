@@ -60,6 +60,7 @@ public class InfoInmueble extends HttpServlet {
 			if (!galeria.isEmpty()) {
 				sesion.setAttribute("galeria", galeria);
 			} else {
+				sesion.removeAttribute("galeria");
 				sesion.setAttribute("errorGaleria", "No se encontraron imágenes en la galería");
 			}
 

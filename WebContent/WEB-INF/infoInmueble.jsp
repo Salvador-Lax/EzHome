@@ -68,77 +68,77 @@
 					ArrayList<ImagenVO> galeria;
 					boolean citaExiste;
 					
-					inm = (InmuebleVO) session.getAttribute("infoinmueble");
 					if (session.getAttribute("errorInfo") != null) {
 						%><p class="mt-3 infoTexto"><%=session.getAttribute("errorInfo")%></p><%
 						session.setAttribute("errorInfo", null);	
 					} else {
-					if (inm != null) {
-						%><et:InfoInm codigo="<%=inm.getCodigo()%>" descripcion="<%=inm.getDescripcion()%>" precio="<%=inm.getPrecio()%>" metroCuadrado="<%=inm.getMetrocuadrado()%>" numHabitacion="<%=inm.getNumhabitacion()%>" provincia="<%=inm.getProvincia()%>" poblacion="<%=inm.getPoblacion()%>" codigoPostal="<%=inm.getCodigopostal()%>" direccion="<%=inm.getDireccion()%>" coordenada="<%=inm.getCoordenada()%>" tNombre="<%=inm.getTnombre()%>" stNombre="<%=inm.getStnombre()%>"/>
-					<%}
-					
-					galeria = new ArrayList<ImagenVO>();
-
-					if (session.getAttribute("galeria") != null) {
-					
-						galeria = (ArrayList<ImagenVO>) session.getAttribute("galeria");
+						inm = (InmuebleVO) session.getAttribute("infoinmueble");
+						if (inm != null) {
+							%><et:InfoInm codigo="<%=inm.getCodigo()%>" descripcion="<%=inm.getDescripcion()%>" precio="<%=inm.getPrecio()%>" metroCuadrado="<%=inm.getMetrocuadrado()%>" numHabitacion="<%=inm.getNumhabitacion()%>" provincia="<%=inm.getProvincia()%>" poblacion="<%=inm.getPoblacion()%>" codigoPostal="<%=inm.getCodigopostal()%>" direccion="<%=inm.getDireccion()%>" coordenada="<%=inm.getCoordenada()%>" tNombre="<%=inm.getTnombre()%>" stNombre="<%=inm.getStnombre()%>"/>
+						<%}
 						
-						%>
+						galeria = new ArrayList<ImagenVO>();
+	
+						if (session.getAttribute("galeria") != null) {
 						
-						<div id="galeria" class="carousel slide" data-bs-ride="carousel">
-							<h2><u>Galería</u></h2>
-							<div class="carousel-indicators">
-							<%for (int i = 0; i < galeria.size(); i++) {
-								if (i == 0) {
-									%><button type="button" data-bs-target="#galeria" data-bs-slide-to="<%=i%>" class="active" aria-current="true" aria-label="Slide 1"></button><%
-								} else {
-									%><button type="button" data-bs-target="#galeria" data-bs-slide-to="<%=i%>" aria-current="true" aria-label="Slide 1"></button><%
-								}
-							}%>
-							</div>
-							<div class="carousel-inner">
+							galeria = (ArrayList<ImagenVO>) session.getAttribute("galeria");
 							
-							<%
-							for (int i = 0; i < galeria.size(); i++) {
-								if (galeria.get(i) != null) {
+							%>
+							
+							<div id="galeria" class="carousel slide" data-bs-ride="carousel">
+								<h2><u>Galería</u></h2>
+								<div class="carousel-indicators">
+								<%for (int i = 0; i < galeria.size(); i++) {
 									if (i == 0) {
-										%><div class="carousel-item active">
-											<img class="d-block w-100" alt="<%=galeria.get(i).getNombre()%>" src="CargarImagenInmueble?img=<%=galeria.get(i).getId()%>">
-										</div>
-									<%} else {
-										%><div class="carousel-item">
-											<img class="d-block w-100" alt="<%=galeria.get(i).getNombre()%>" src="CargarImagenInmueble?img=<%=galeria.get(i).getId()%>">
-										</div>
-									<%}
-								}
-							}%>
+										%><button type="button" data-bs-target="#galeria" data-bs-slide-to="<%=i%>" class="active" aria-current="true" aria-label="Slide 1"></button><%
+									} else {
+										%><button type="button" data-bs-target="#galeria" data-bs-slide-to="<%=i%>" aria-current="true" aria-label="Slide 1"></button><%
+									}
+								}%>
+								</div>
+								<div class="carousel-inner">
+								
+								<%
+								for (int i = 0; i < galeria.size(); i++) {
+									if (galeria.get(i) != null) {
+										if (i == 0) {
+											%><div class="carousel-item active">
+												<img class="d-block w-100" alt="<%=galeria.get(i).getNombre()%>" src="CargarImagenInmueble?img=<%=galeria.get(i).getId()%>">
+											</div>
+										<%} else {
+											%><div class="carousel-item">
+												<img class="d-block w-100" alt="<%=galeria.get(i).getNombre()%>" src="CargarImagenInmueble?img=<%=galeria.get(i).getId()%>">
+											</div>
+										<%}
+									}
+								}%>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
 							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#galeria" data-bs-slide="prev">
-								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#galeria" data-bs-slide="next">
-								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					<%} else {%>
-						<h2 class="pt-5">No se encontraron imágenes.</h2>
-					<%}%>
-					<%if (cvo != null && cvo.getCodigoVerificar().equals("0")) {
-						citaExiste = (boolean) session.getAttribute("citaExiste");
-						
-						if (citaExiste) {
-							if (session.getAttribute("alertaSolicitud") != null) {
-								%><p class="mt-5 infoTexto"><%=session.getAttribute("alertaSolicitud")%></p><%
-								session.setAttribute("alertaSolicitud", null);
+						<%} else {%>
+							<h2 class="pt-5">No se encontraron imágenes.</h2>
+						<%}%>
+						<%if (cvo != null && cvo.getCodigoVerificar().equals("0")) {
+							citaExiste = (boolean) session.getAttribute("citaExiste");
+							
+							if (citaExiste) {
+								if (session.getAttribute("alertaSolicitud") != null) {
+									%><p class="mt-5 infoTexto"><%=session.getAttribute("alertaSolicitud")%></p><%
+									session.setAttribute("alertaSolicitud", null);
+								} else {
+									%><p class="mt-5 infoTexto">Ya ha solicitado una cita para este Inmueble</p>
+								<%}
 							} else {
-								%><p class="mt-5 infoTexto">Ya ha solicitado una cita para este Inmueble</p>
-							<%}
-						} else {
-							%><a class="btn btn-lg mt-5 infoTexto" href="PedirCita">Solicitar una citacion</a>	
-						<%}	
-					}
+								%><a class="btn btn-lg mt-5 infoTexto" href="PedirCita">Solicitar una citacion</a>	
+							<%}	
+						}
 				}%>
 			</div>
 		</main>

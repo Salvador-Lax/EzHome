@@ -59,7 +59,7 @@
 					<form method="post">
 						<h2 class="text-center"><u>Cancelar Cita</u></h2>
 						<div class="text-center">
-							<label for="eliminar">¿Esta seguro que desea cancelar la cita?<br>De ser axial, escriba este código: <%=session.getAttribute("codigoEliminar")%></label>
+							<label for="eliminar">¿Esta seguro que desea cancelar la cita?<br>De ser así, escriba este código: <%=session.getAttribute("codigoEliminar")%></label>
 							<input type="text" name="eliminar" class="form-control">
 						<div>
 						<input type="submit" value="Cancelar" class="btn">

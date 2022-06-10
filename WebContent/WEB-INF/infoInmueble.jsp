@@ -76,6 +76,10 @@
 					
 					galeria = new ArrayList<ImagenVO>();
 
+					if (session.getAttribute("errorInfo") != null) {
+						%><p class="mt-3 infoTexto"><%=session.getAttribute("errorInfo")%></p><%
+						session.setAttribute("errorInfo", null);	
+					} else {
 					if (session.getAttribute("galeria") != null) {
 					
 						galeria = (ArrayList<ImagenVO>) session.getAttribute("galeria");
@@ -122,12 +126,7 @@
 					<%} else {%>
 						<h2 class="pt-5">No se encontraron imágenes.</h2>
 					<%}%>
-					<%if (session.getAttribute("errorInfo") != null) {
-						%><p class="mt-5 infoTexto"><%=session.getAttribute("errorInfo")%></p><%
-					}
-					session.setAttribute("errorInfo", null);	
-							
-					if (cvo != null && cvo.getCodigoVerificar().equals("0")) {
+					<%if (cvo != null && cvo.getCodigoVerificar().equals("0")) {
 						citaExiste = (boolean) session.getAttribute("citaExiste");
 						
 						if (citaExiste) {
@@ -141,7 +140,7 @@
 							%><a class="btn btn-lg mt-5 infoTexto" href="PedirCita">Solicitar una citacion</a>	
 						<%}	
 					}
-				%>
+				}%>
 			</div>
 		</main>
 		

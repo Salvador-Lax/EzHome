@@ -304,9 +304,6 @@ body #infoInmueble #fondoInmueble {
     width: 90%;
   }
 }
-body #infoInmueble #galeria {
-  margin-top: 2em;
-}
 body #infoInmueble .carousel-inner {
   border: solid;
   border-radius: 2em;

@@ -69,17 +69,16 @@
 					boolean citaExiste;
 					
 					inm = (InmuebleVO) session.getAttribute("infoinmueble");
-					
+					if (session.getAttribute("errorInfo") != null) {
+						%><p class="mt-3 infoTexto"><%=session.getAttribute("errorInfo")%></p><%
+						session.setAttribute("errorInfo", null);	
+					} else {
 					if (inm != null) {
 						%><et:InfoInm codigo="<%=inm.getCodigo()%>" descripcion="<%=inm.getDescripcion()%>" precio="<%=inm.getPrecio()%>" metroCuadrado="<%=inm.getMetrocuadrado()%>" numHabitacion="<%=inm.getNumhabitacion()%>" provincia="<%=inm.getProvincia()%>" poblacion="<%=inm.getPoblacion()%>" codigoPostal="<%=inm.getCodigopostal()%>" direccion="<%=inm.getDireccion()%>" coordenada="<%=inm.getCoordenada()%>" tNombre="<%=inm.getTnombre()%>" stNombre="<%=inm.getStnombre()%>"/>
 					<%}
 					
 					galeria = new ArrayList<ImagenVO>();
 
-					if (session.getAttribute("errorInfo") != null) {
-						%><p class="mt-3 infoTexto"><%=session.getAttribute("errorInfo")%></p><%
-						session.setAttribute("errorInfo", null);	
-					} else {
 					if (session.getAttribute("galeria") != null) {
 					
 						galeria = (ArrayList<ImagenVO>) session.getAttribute("galeria");
